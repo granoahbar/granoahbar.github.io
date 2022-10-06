@@ -5,28 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 
     <title>Document</title>
 </head>
 
 <body>
 
-    <card class="card" id="nav">
+    <nav class="nav">
+        <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+        <label for="nav__checkbox" class="nav__toggle">
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </label>
+        <ul class="nav__menu">
+            <Button id="homebutton">
+                <div>
+                    <h id="noahhumphreys">Noah Humphreys</h> 
+                    <p id="fullstackwebdev">Full Stack Web Developer</p>
+                </div>
+            </Button>
+            <li><a id="linkedinicon" onclick="link" type="button" href="https://www.linkedin.com/feed/" target="_blank" class="devicon-linkedin-plain colored"></a></li>
+            <li><a id="linkedinicon" onclick="link" type="button" href="https://github.com/granoahbar" target="_blank" class="devicon-github-original colored"></a></li>
 
-        <h1>Noah Humphreys</h1>
-        <p>Full stack web developer</p>
-
-    </card>
+            <li><a href="#">My Projects</a></li>
+            <li><a href="#">Tech Stack</a></li>
+            <li><a href="#">About Me</a></li>
+        </ul>
+    </nav>
 
     <section id="section1">
 
         <card id="aboutmecard" class="card">
 
-            <img id="profilepic" src="photos/AAD309E0-0F05-461C-B8FC-0494AA0F3DF7-2.jpg" alt="">
+            <h3>About Me</h3>
 
             <div id="aboutmetext">
-                <h3>About Me</h3>
-                <p>vieufhbviuefv efv efv e fv efvefvefv efv</p>
+                <img id="profilepic" src="photos/AAD309E0-0F05-461C-B8FC-0494AA0F3DF7-2.jpg" alt="">
+                <p>I am a full stack web developer out of Utah with a focus and interest in front end development. I am looking to help the progression of a forward thinking company and grow as a web developer and human. I have a passion for being in, and photographing the outdoors. I let that same passion for visualy pleasing images drive my front end devlopment and I enjoy watching a project come together like a well composed photo. 
+                </p>
             </div>
             
         </card>
@@ -34,8 +55,18 @@
         <div id="techstackcard" class="card">
 
             <h3>Tech Stack</h3>
-            <i class="fa-brands fa-js"></i>
-
+                <div id="icons">
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-react-original-wordmark"></i>
+                    <i class="devicon-nodejs-plain-wordmark"></i>
+                    <i class="devicon-postgresql-plain-wordmark"></i>
+                    <i class="devicon-github-original-wordmark colored"></i>
+                    <i class="devicon-git-plain-wordmark"></i>
+                    <i class="devicon-express-original-wordmark colored"></i>
+                    <i class="devicon-sequelize-plain-wordmark"></i>
+                </div>
         </div>
 
     </section>
@@ -43,14 +74,12 @@
     <card id="projectscard" class="card">
 
         <h3>Projects</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HXYXWDcwzVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
    
     </card>
 
-    <card class="card">
+    <script src="index.js"></script>
 
-        <h3>Social Media</h3>
-   
-    </card>
 
 </body>
 
