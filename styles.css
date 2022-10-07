@@ -253,9 +253,15 @@ img {
   }
 
 #youtube {
-    width: 230px;
-    height: 170px;
+    width: 300px;
+    height: 220px;
 }
+
+@media only screen and (max-width:650px) {
+    #youtube {
+        width: 170px;
+        height: 120px;
+    }
 
 .material-symbols-outlined {
     font-size: 30px;
