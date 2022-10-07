@@ -10,11 +10,12 @@ body {
     background-attachment: fixed;
     background-color: #cccccc;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: auto;
     background-position: center;
     background-size: cover;
     margin: 0;
     padding: 0; 
+    
 }
 
 .card {
@@ -229,12 +230,6 @@ img {
     box-shadow: 3px 3px 3px #00000067;
 }
 
-#projectscard {
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
 @media only screen and (max-width:1250px) {
     #section1 {
         flex-direction: column;
@@ -262,7 +257,15 @@ img {
         width: 170px;
         height: 120px;
     }
+}
 
 .material-symbols-outlined {
     font-size: 30px;
+}
+
+#projectscard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 4rem;
 }
