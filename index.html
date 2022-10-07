@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
 
-    <title>Document</title>
+    <title>My Portfolio</title>
+
 </head>
 
-<body>
+<body style="background-image: url('photos/_DSC5938.jpg');">
 
     <nav class="nav">
+
         <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+
         <label for="nav__checkbox" class="nav__toggle">
+
             <div class="container" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </div>
+
         </label>
+
         <ul id="navmenu" class="nav__menu">
+
             <Button id="homebutton">
+
                 <div>
-                    <h id="noahhumphreys">Noah Humphreys</h> 
+
+                    <a id="noahhumphreys">Noah Humphreys</a> 
                     <p id="fullstackwebdev"> Full Stack Web Developer</p>
+
                 </div>
+
             </Button>
+
             <li><a id="linkedinicon" onclick="link" type="button" href="https://www.linkedin.com/feed/" target="_blank" class="devicon-linkedin-plain colored"></a></li>
             <li><a id="linkedinicon" onclick="link" type="button" href="https://github.com/granoahbar" target="_blank" class="devicon-github-original colored"></a></li>
+
         </ul>
+
     </nav>
 
     <section id="section1">
@@ -41,9 +58,13 @@
             <h3>About Me</h3>
 
             <div id="aboutmetext">
+
                 <img id="profilepic" src="photos/AAD309E0-0F05-461C-B8FC-0494AA0F3DF7-2.jpg" alt="">
-                <p>I am a full stack web developer who grew up in Idaho and now lives in Utah. I have a focus and interest in front end development, though I enjoy learning aspect of both front and back end. I am looking to help the progression of a forward thinking company. My goal is continual growth as a web developer and a human. I have a passion for being in, and photographing the outdoors. I let that same passion for visualy pleasing images drive my front end devlopment. I enjoy watching a project come together like a well composed photo. 
+
+                <p>
+                    I am a full stack web developer who grew up in Idaho and now lives in Utah. I have a focus and interest in front end development, though I enjoy learning aspect of both front and back end. I am looking to help the progression of a forward thinking company. My goal is continual growth as a web developer and a human. I have a passion for being in, and photographing the outdoors. I let that same passion for visualy pleasing images drive my front end devlopment. I enjoy watching a project come together like a well composed photo. 
                 </p>
+
             </div>
             
         </card>
@@ -51,7 +72,9 @@
         <div id="techstackcard" class="card">
 
             <h3>Tech Stack</h3>
+
                 <div id="icons">
+
                     <i class="devicon-css3-plain-wordmark"></i>
                     <i class="devicon-javascript-plain"></i>
                     <i class="devicon-html5-plain-wordmark"></i>
@@ -66,6 +89,7 @@
                     <i class="devicon-heroku-plain-wordmark"></i>
 
                 </div>
+
         </div>
 
     </section>
@@ -73,13 +97,16 @@
     <card id="projectscard" class="card">
 
         <h3>Projects</h3>
+
             <div>
+
                 <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/HXYXWDcwzVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
             </div>
+
     </card>
 
     <script src="index.js"></script>
-
 
 </body>
 
