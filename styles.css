@@ -108,6 +108,7 @@ ul.nav__menu {
     padding-right: 20px;
     padding-bottom: 20px;
     margin-right: 3.5rem;
+    scroll-snap-align: start;
   }
 
   h {
@@ -195,10 +196,13 @@ ul.nav__menu {
     text-align: center;
     flex-direction: column;
     gap: 20px;
+    height: 100vh;
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+    height: auto;
+    scroll-snap-align: start;
 }
 
 #icons {
@@ -216,7 +220,8 @@ ul.nav__menu {
     padding-right: 30px;
     padding-bottom: 30px;background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-}
+    height: auto;
+  }
 
 #aboutmetext {
     flex-direction: row;
@@ -253,6 +258,9 @@ img {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+    height: auto;
+    scroll-snap-align: start;
+
 }
 
 p {
@@ -264,4 +272,8 @@ p {
 h3 {
   font-size: small;
   font-weight: 500;
+}
+
+html {
+  scroll-snap-type: y mandatory;
 }
