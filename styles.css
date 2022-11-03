@@ -202,7 +202,6 @@ ul.nav__menu {
     padding-right: 30px;
     padding-bottom: 30px;
     height: auto;
-    scroll-snap-align: start;
 }
 
 #icons {
