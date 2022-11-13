@@ -119,14 +119,14 @@ body {
     color: rgb(255, 255, 255);
     margin-bottom: 0;
     margin-top: 0;
-    font-size:calc(12px + 1.5vw);
+    font-size:calc(16px + 1.5vw);
     font-weight: 600;
   }
 
   #fullstackwebdev {
     margin-top: 0;
     margin-bottom: 0;
-    font-size:calc(6px + 1vw);
+    font-size:calc(10px + 1vw);
     font-weight: 500;
     color: rgba(232, 232, 232, 0.492);
   }
@@ -150,7 +150,7 @@ body {
 #linkedinicon {
     color: rgb(255, 255, 255);
     display: block;
-    font-size:calc(15px + 2vw);
+    font-size:calc(22px + 2vw);
     padding-left: 2vw;
 }
 
@@ -169,9 +169,9 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    font-size:calc(50px + 2vw);  
+    font-size:calc(60px + 2vw);  
     gap: 4vw;
-    margin-bottom: 20vw;
+    margin-bottom: 25vw;
 }
 
 
@@ -184,8 +184,8 @@ body {
     padding-left: 4vw;
     padding-right: 4vw;
     padding-bottom: 4vw;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     height: 100vh;
     scroll-snap-align: start;
   }
@@ -197,27 +197,26 @@ body {
 img {
     height: calc(35px + 12vw);
     width: calc(35px + 12vw);
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0px 0px 7px 1px rgb(182, 182, 182);
+    border-width: .70vw;
     border-radius: 100vw;
     margin-bottom: 4vw;
 }
 
-#youtube {
-    width: 30vw;
-    height: 20vw;
-    align-content: center;
-}
-
-@media only screen and (max-width:650px) {
     #youtube {
       width: calc(120px + 20vw);
       height: calc(75px + 15vw);
+      align-content: center;
     }
-}
+
 
 #projectscard {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     gap: 4vw;
     padding-top: 4vw;
     padding-left: 4vw;
@@ -234,7 +233,7 @@ p {
 }
 
 h3 {
-  font-size:calc(8px + 2.75vw);
+  font-size:calc(12px + 2.75vw);
   font-weight: 500;
 }
 
