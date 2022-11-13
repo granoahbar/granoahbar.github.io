@@ -53,16 +53,19 @@ table {
 	border-spacing: 0;
 }
 
+#background {
+  background-image: url(photos/AdobeStock_406878337.jpeg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+
 
 body {
 
-    background-attachment: fixed;
-    background-color: #15151592;
-    background-repeat: no-repeat;
-    height: auto;
-    background-position: center;
-    background-size: cover;
     margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 
@@ -199,8 +202,8 @@ img {
     width: calc(35px + 12vw);
     border-style: solid;
     border-color: white;
-    box-shadow: 0px 0px 7px 1px rgb(182, 182, 182);
-    border-width: .70vw;
+    box-shadow: 0px 0px 7px 2px rgb(193, 193, 193);
+    border-width: .5vw;
     border-radius: 100vw;
     margin-bottom: 4vw;
 }
