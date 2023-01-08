@@ -14,36 +14,43 @@
 <body class="bg-sitegradient bg-cover font-sans">
 <nav class="background-blur menu text-white fixed z-[9999] top-0 left-0 right-0 p-5 md:flex md:items-center md:justify-between">
     <div class="flex justify-between items-center">
-        <span class="text-xl font-bold text-white"> Noah Humphreys </span>
+        <span class="text-xl md:text-3xl lg:text-4xl font-bold text-white"> Noah Humphreys </span>
         <span class="block text-3xl cursor-pointer mx-2 md:hidden text-white">
           <ion-icon id="menuIcon" name="menu" onclick="toggleMenu()"></ion-icon>
         </span>
     </div>
     <ul class="bg-jacarta-700 text-center bg-cover bg-center bg-fixed absolute md:bg-transparent md:flex md:items-center md:static w-full md:w-auto left-0 md:py-0 py-4 md:pl-0 p-5 mr-0 ml-[0%] md:ml-0 md:opacity-100 top-[-400px] pb-0 transition-all ease-in duration-500 w-full">
         <li class="items-center py-3.5 md:text-md lg:text-lg md:px-5 w-auto">
-            <a href="#techStack" onclick="toggleMenu()" id="howItWorksBtn" class="hover:text-fuchsia-500 focus:text-accent font-semibold duration-500">Tech Stack</a>
+            <a href="#techStack" onclick="toggleMenu()" id="howItWorksBtn" class="text-xl md:text-2xl lg:text-3xl hover:text-fuchsia-500 focus:text-accent font-semibold duration-500">Tech Stack</a>
         </li>
         <li class="font-display items-center pt-8 md:pt-3.5 py-3.5 md:text-md lg:text-lg md:px-5 w-auto md:pr-10">
-            <a href="#projects" onclick="toggleMenu()" id="pricingBtn" class="hover:text-fuchsia-500 focus:text-accent font-semibold duration-500">Projects</a>
+            <a href="#projects" onclick="toggleMenu()" id="pricingBtn" class="text-xl md:text-2xl lg:text-3xl hover:text-fuchsia-500 focus:text-accent font-semibold duration-500">Projects</a>
         </li>
-        <a href="https://www.linkedin.com/in/noahhumphreys/" target="_none" class="devicon-linkedin-plain-wordmark colored hover:text-fuchsia-500 focus:text-accent duration-500 text-8xl"></a>
+        <a href="https://www.linkedin.com/in/noahhumphreys/" target="_none" class="devicon-linkedin-plain-wordmark colored hover:text-fuchsia-500 focus:text-accent duration-500 text-8xl md:text-9xl lg:text-10xl"></a>
     </ul>
 </nav>
 <div class="hero pt-20 w-full">
     <picture class="pointer-events-none absolute inset-x-0 top-0 -z-10 block"><img src="./assets/gradient.jpeg" alt="gradient dark"></picture>
 </div>
 <section class="relative bg-light-base py-24 bg-jacarta-800">
-    <div class="container px-10 w-auto md:w-[70%] lg:w-[50%] xl:w-[40%]">
+    <div class="container px-10 w-auto md:w-[80%] lg:w-[60%] xl:w-[50%]">
         <div class="mx-auto mb-20 max-w-xl text-center">
-            <h2 class="mb-6 text-center font-display text-3xl font-medium text-jacarta-700 text-white">Hi! I am Noah.</h2>
-            <p id="techStack" class="text-lg text-jacarta-300">I am a full stack web developer currently located in the Utah County area. I am currently looking for a full time position in a software engineer/web developer role. <br> Feel free to contact me or view my Resume through Linkedin.</p>
+            <h2 class="mb-6 text-center font-display text-3xl md:text-5xl font-medium text-jacarta-700 text-white">Hi! I am Noah.</h2>
+            <p class="mb-6 text-lg md:text-2xl text-jacarta-300">I am a full stack web developer currently located in the Utah County area. I am looking for a full time position in a software engineer/web developer role.</p>
+            <div class="text-l font-bold text-white inline-flex h-[8rem] w-[8rem] md:h-[12rem] md:w-[12rem] items-center justify-center rounded-full border border-jacarta-100 border-jacarta-600 bg-jacarta-700">
+                <a href="https://docs.google.com/document/d/1TKIluVUmgc6xxjhW4i_4EL2QPUC0jzFCrlt3gX0GFUY/edit?usp=sharing" target="_none">
+                    <ion-icon class="animate-bounce text-5xl md:text-7xl text-indigo-600" name="document-text"></ion-icon>
+                    <p class="text-l md:text-2xl text-white">Resume</p>
+                </a>
+                <div id="techStack"></div>
+            </div>
         </div>
         <div class="flex flex-col">
             <div class="highlight-item mb-12 border border-jacarta-100 p-8 pt-0 text-center content-center transition-shadow hover:shadow-xl border-jacarta-600 bg-jacarta-700">
-                <div class="text-l font-bold text-white mb-9 -mt-8 inline-flex h-[5.5rem] w-[5.5rem] items-center justify-center rounded-full border border-jacarta-100 border-jacarta-600 bg-jacarta-700">
+                <div class="text-l md:text-2xl font-bold text-white mb-9 -mt-8 inline-flex h-[5.5rem] w-[5.5rem] md:h-[8rem] md:w-[8rem] items-center justify-center rounded-full border border-jacarta-100 border-jacarta-600 bg-jacarta-700">
                     Tech <br> Stack
                 </div>
-                <div class="text-white text-5xl">
+                <div class="text-white text-5xl md:text-7xl">
                     <i class="devicon-css3-plain-wordmark"></i>
                     <i class="devicon-javascript-plain"></i>
                     <i class="devicon-html5-plain-wordmark"></i>
@@ -56,37 +63,38 @@
                     <i class="devicon-sequelize-plain-wordmark"></i>
                     <i class="devicon-vscode-plain-wordmark"></i>
                     <i class="devicon-heroku-plain-wordmark"></i>
-                    <i id="projects" class="devicon-tailwindcss-original-wordmark"></i>
+                    <i class="devicon-tailwindcss-original-wordmark"></i>
                 </div>
+                <div id="projects"></div>
             </div>
-            <div" class="highlight-item mb-12 border border-jacarta-100 p-8 pt-0 text-center transition-shadow hover:shadow-xl border-jacarta-600 bg-jacarta-700">
-                <div class="text-l font-bold text-white mb-9 -mt-8 inline-flex h-[5.5rem] w-[5.5rem] items-center justify-center rounded-full border border-jacarta-100 border-jacarta-600 bg-jacarta-700">
+            <div" class="highlight-item mb-12 mt-12 border border-jacarta-100 p-8 pt-0 text-center transition-shadow hover:shadow-xl border-jacarta-600 bg-jacarta-700">
+                <div class="text-l md:text-2xl font-bold text-white mb-9 -mt-8 inline-flex h-[5.5rem] w-[5.5rem] md:h-[8rem] md:w-[8rem] items-center justify-center rounded-full border border-jacarta-100 border-jacarta-600 bg-jacarta-700">
                     Projects
                 </div>
                 <div class="flex flex-col">
                     <div class="flex flex-col justify-center">
-                        <h3 class="mb-4 font-display text-xl text-jacarta-700 text-white">Backlog.io - Resteraunt Analytics App</h3>
-                        <p class="text-jacarta-300 pb-4">This project is still currently under way. I am building a RESTful API using EXPRESS. I built JWT based authentication endpoints that support refresh tokens and sliding sessions. I am designing a PostgreSQL database that uses Prisma as an ORM and utilizes migrations for versioning. I am securely storing user passwords by salting and hashing before storing in the database.</p>
+                        <h3 class="mb-4 font-display text-xl md:text-3xl text-jacarta-700 text-white">Backlog.io - Resteraunt Analytics App</h3>
+                        <p class="text-jacarta-300 pb-4 md:text-2xl">This project is still currently under way. I am building a RESTful API using EXPRESS. I built JWT based authentication endpoints that support refresh tokens and sliding sessions. I am designing a PostgreSQL database that uses Prisma as an ORM and utilizes migrations for versioning. I am securely storing user passwords by salting and hashing before storing in the database.</p>
                         <img class="self-center" src="assets/AdobeStock_468456536.jpeg" alt="description of image" width="300" height="200">
                     </div>
                     <div class="flex flex-col justify-center pt-10">
-                        <h3 class="mb-4 font-display text-xl text-jacarta-700 text-white">Backlog.io - Idea Validator App</h3>
-                        <p class="text-jacarta-300 pb-4">Leveraged a no-code solution to build an app for vetting start-up ideas for viability. I learned the no code solution to be able to help clients with the tools they need to validate a project if they lack coding knowledge or funds to pay someone to code their MVP application.</p>
+                        <h3 class="mb-4 font-display text-xl md:text-3xl text-jacarta-700 text-white">Backlog.io - Idea Validator App</h3>
+                        <p class="text-jacarta-300 pb-4 md:text-2xl">Leveraged a no-code solution to build an app for vetting start-up ideas for viability. I learned the no code solution to be able to help clients with the tools they need to validate a project if they lack coding knowledge or funds to pay someone to code their MVP application.</p>
                         <img class="self-center" src="assets/Screen Shot 2023-01-05 at 6.16.48 PM.png" alt="description of image" width="300" height="200">
                     </div>
                     <div class="flex flex-col justify-center pt-10">
-                        <h3 class="mb-4 font-display text-xl text-jacarta-700 text-white">Backlog.io - CoinDexter Website</h3>
-                        <p class="text-jacarta-300 pb-4">Built a custom landing page in HTML/CSS for a startup to be able to collect leads via Netlify forms. I will link to the page once they have decided to publish. I modeled/styled my portfolio site in which you are viewing off of what I built for them. I was able to try out and learn tailwindcss. Here is a snap shot of the project below.</p>
+                        <h3 class="mb-4 font-display text-xl md:text-3xl text-jacarta-700 text-white">Backlog.io - CoinDexter Website</h3>
+                        <p class="text-jacarta-300 pb-4 md:text-2xl">Built a custom landing page in HTML/CSS for a startup to be able to collect leads via Netlify forms. I will link to the page once they have decided to publish. I modeled/styled my portfolio site in which you are viewing off of what I built for them. I was able to try out and learn tailwindcss. Here is a snap shot of the project below.</p>
                         <img class="self-center" src="assets/Screen Shot 2023-01-05 at 5.47.06 PM.png" alt="description of image" width="300" height="200">
                     </div>
                     <div class="flex flex-col justify-center pt-10">
-                        <h3 class="mb-4 font-display text-xl text-jacarta-700 text-white">Dev Mountain - National Parks</h3>
-                        <p class="text-jacarta-300 pb-4">This is my DevMountain Specializations Capstone Project. My first ever REACT application. I absolutely love our national parks, so I decided to build this around them. This was my second application built after about 12 weeks of learning how to code.</p>
+                        <h3 class="mb-4 font-display text-xl md:text-3xl text-jacarta-700 text-white">Dev Mountain - National Parks</h3>
+                        <p class="text-jacarta-300 pb-4 md:text-2xl">This is my DevMountain Specializations Capstone Project. My first ever REACT application. I absolutely love our national parks, so I decided to build this around them. This was my second application built after about 12 weeks of learning how to code.</p>
                         <iframe class="self-center" id="youtube" src="https://www.youtube.com/embed/Q6UOt3nNt-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>  
                     <div class="flex flex-col justify-center pt-10">
-                        <h3 class="mb-4 font-display text-xl text-jacarta-700 text-white">Dev Mountain - Better Friend</h3>
-                        <p class="text-jacarta-300 pb-4">This is my first ever application I ever made. After about 6 weeks of learning how to code at devmouantain, we were tasked with building our first full stack application. I built this app tp help users keep track of their friends and become a better friend. I definitley made a lot of mistakes but in the process I learned important foundational concepts. </p>
+                        <h3 class="mb-4 font-display text-xl md:text-3xl text-jacarta-700 text-white">Dev Mountain - Better Friend</h3>
+                        <p class="text-jacarta-300 pb-4 md:text-2xl">This is my first ever application I ever made. After about 6 weeks of learning how to code at devmouantain, we were tasked with building our first full stack application. I built this app tp help users keep track of their friends and become a better friend. I definitley made a lot of mistakes but in the process I learned important foundational concepts. </p>
                         <iframe class="self-center" id="youtube" src="https://www.youtube.com/embed/HXYXWDcwzVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
